@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User-Details</title>
+    <link rel="icon" href="https://img.icons8.com/color/42/000000/health-checkup.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@700&display=swap&family=Delius&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: url(https://www.brief.health/img/content/post/medicalfuturist-our-favourite-digital-health-articles-of-2020.png) center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            font-weight: bold;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #BA68C8
+        }
+
+        .profile-button {
+            background: rgb(99, 39, 120);
+            box-shadow: none;
+            border: none
+        }
+
+        .profile-button:hover {
+            background: #682773
+        }
+
+        .profile-button:focus {
+            background: #682773;
+            box-shadow: none
+        }
+
+        .profile-button:active {
+            background: #682773;
+            box-shadow: none
+        }
+
+        .back:hover {
+            color: #682773;
+            cursor: pointer
+        }
+
+        .labels {
+            font-size: medium;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+
+        footer {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        i {
+            color: white;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card-title {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .card-text {
+            font-family: 'Delius', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(0, 0, 0, 0.8);">
+        <a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif;"><img
+                src="https://img.icons8.com/color/42/000000/health-checkup.png" />
+            Jan-Swasthya</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Health-Store
+                    </a>
+                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="appointment.html">Book Appointment</a>
+                        <a class="dropdown-item" href="#">Pharmacy Near-by</a>
+                        <a class="dropdown-item" href="Pneumonia.html">Pneumonia-Detection</a>
+                        <a class="dropdown-item" href="trends.html">Medical Trends</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                        <a class="dropdown-item" href="index.html">Log-Out</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-success my-2 my-sm-0"><i class="fa fa-user" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div class="container rounded mt-5 mb-5 "
+        style="background-color: rgba(0, 0, 0, 0.8); color: white; font-weight: bold;">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+                        src="https://icon-library.com/images/profile-image-icon/profile-image-icon-5.jpg"><span
+                        class="font-weight-bold">User</span><span class="text-black-50">useremail@gmail.com</span><span>
+                    </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Vitals-Entry</h4>
+                    </div>
+                    <form>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">Gender</label>
+                                <select class="form-control" id="sel1" required>
+                                    <option></option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6"><label class="labels">Age</label><input type="text"
+                                    class="form-control" value="" placeholder="Enter Age" required></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Height</label><input required type="number"
+                                    class="form-control" placeholder="in cm's" value=""></div>
+                            <div class="col-md-6"><label class="labels">Weight</label><input required type="number"
+                                    class="form-control" value="" placeholder="in Kg"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Blood-Group</label>
+                                <select class="form-control" required>
+                                    <option></option>
+                                    <option>A+ve</option>
+                                    <option>A-ve</option>
+                                    <option>B+ve</option>
+                                    <option>B-ve</option>
+                                    <option>AB+ve</option>
+                                    <option>AB-ve</option>
+                                    <option>O+ve</option>
+                                    <option>O-ve</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6"><label class="labels">Medications Active</label><textarea
+                                    class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-5 text-center profile-button"
+                            data-toggle="modal" data-target="#exampleModalCenter">
+                            Save Details
+                        </button>
+
+
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle"><kbd>Profile Entry</kbd></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body" style="color: black;">
+                                        Make sure your data has been filled correctly and ensure you have uploaded the
+                                        Doctor prescription if any Medications currently active
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card" style="width: 18rem; background-color: rgb(255, 255, 255,0.3);">
+                            <p><img id="output" width="200" class="card-img-top" /></p>
+                            <div class="card-body">
+                                <h5 class="card-title">Upload Prescription</h5>
+                                <p class="card-text">Upload your Prescription image in .png or .jpg format</p>
+                                <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                                        style="display: none;"></p>
+                                <button class="btn btn-primary"><label for="file" style="cursor: pointer;">Upload
+                                    </label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br>
+    <footer style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="row">
+            <div class="col align-self-center">
+                <br> <img style="margin-left: auto; margin-right: auto; display: block;"
+                    src="https://img.icons8.com/color/80/000000/health-checkup.png" />
+                <h4 style="text-align: center; color: white;">Jan-Swasthya</h4>
+            </div>
+        </div>
+        <div class="row-2  justify-content-center">
+            <div class="col ">
+                <h6 style="color: whitesmoke;">Connect us :</h6>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <i class="fa fa-twitter" aria-hidden="true"></i> <i
+                    class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            </div>
+        </div><br>
+    </footer>
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+    <script src="" async defer></script>
+</body>
+
+</html>
